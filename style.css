@@ -1,0 +1,69 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: outfit;
+  font-size: 16px;
+  color: #8bacda;
+  box-sizing: border-box;
+}
+.card {
+  position: absolute;
+  margin: auto;
+  inset: 0;
+  border: 1px solid hsl(216, 50%, 16%);
+  border-radius: 12px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 16px 16px 16px 16px;
+  width: 240px;
+  height: 440px;
+}
+.cardimg {
+  opacity: 1;
+  border: 1px solid hsl(216, 50%, 16%);
+  border-radius: 8px;
+  width: 240px;
+  transition: .5s ease;
+}
+.hov-img {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay:hover .cardimg {
+  opacity: 0.3;
+}
+
+.overlay:hover .hov-img {
+  opacity: 1;
+}
+#hover b{
+  font-size: 20px;
+}
+#hover{
+  color: white;
+}
+#face {
+  border: 1px solid white;
+  border-radius: 25px;
+  max-width: 28px;
+  vertical-align: middle;
+}
+#hover:hover {
+  color: hsl(178, 100%, 50%);
+}
+#icon{
+  vertical-align: middle;
+}
+#left{
+  display: inline-block;
+  width: 48%;
+  text-align: left;
+  color: hsl(178, 100%, 50%);
+}
+#right{
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
